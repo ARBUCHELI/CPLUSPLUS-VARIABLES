@@ -85,7 +85,37 @@ int main()
 
 ==================================================================================================================================================================
 
-				
+* Step 2: Initialize a Variable
+-------------------------------
+	After we declare a variable, we can give it a value!
+
+	Suppose that we have declared an int variable called score, to set it to 0, we can simply write:
+
+		score = 0;
+
+	. The score is the name of the variable.
+
+	. The = indicates assignment.
+
+	. The 0 is the value you want to store inside the variable.
+
+	Note: In C++, a single equal sign = does not really mean “equal”. It means “assign”. In the code above, we are assigning the score variable a value of 0.				
+
+variable.cpp
+------------
+#include <iostream>
+
+int main() {
+  
+  // Declare a variable   
+  int year;
+  
+  // Initialize a variable
+  year = 2019;
+   
+}
+
+==================================================================================================================================================================
 
 
 
