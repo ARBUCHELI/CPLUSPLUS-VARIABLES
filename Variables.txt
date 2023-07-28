@@ -1,3 +1,107 @@
 # VARIABLES
 -----------
 
+* Introduction to Variables
+---------------------------
+	The "Hello World!" program simply writes to the screen. It does not read anything, calculate anything, or allow for user input. That’s no fun!
+
+	Real programs tend to produce results based on some input that the user of the program gives, rather than just outputting the same thing every time.
+
+	To read something from the keyboard, we first need somewhere in the computer’s memory to store data. That is where variables come in.
+
+	A variable is simply a name that represents a particular piece of your computer’s memory that has been set aside for you to store, retrieve, and use data.
+
+	In this lesson, we will learn about some of the basic data types:
+
+		. int: integer numbers
+
+		. double: floating-point numbers
+
+		. char: individual characters
+
+		. string: a sequence of characters
+
+		. bool: true/false values
+
+	Every variable has a type, which represents the kind of information you can store inside of it. It tells your compiler how much memory to set aside for the variable, and it 
+	defines what you can do with the variable.
+
+					Type				Usage				Examples
+					----				-----				--------
+					int				integer numbers			0
+													420
+
+					double				floating-point numbers		3.14
+													-200.0
+
+					char				characters			'a'
+													'@'
+
+					string				sequence of characters		"Hello World!"
+													"Codecademy"
+
+					bool				truth values			true
+													false
+
+==================================================================================================================================================================
+
+* Step 1: Declare a Variable
+----------------------------
+	"Every variable in C++ must be declared before it can be used!"
+
+	Suppose we are building a game and we want to keep track of a player’s score that goes from 0 to 10. We need a variable!
+
+	Before we can use a variable, we must declare, or create, it. To declare a variable, we need to provide two things:
+
+		. A type for the variable.
+		. A name for the variable.
+	
+	So to declare an integer variable called score, we need to write:
+
+		int score;
+
+		. The int is the type of the variable.
+
+		. The score is the name of the variable.
+
+		. The ; is how we end a statement.
+
+	In C++, variable names consist only of upper/lower case letters, digits, and/or underscores.
+
+	Note: C++ is known as a strongly typed language. If you try to assign a value of one type to a variable that is a different type, you may get unexpected results, warnings, or 
+	errors.
+
+variable.cpp
+------------
+#include <iostream>
+
+int main() 
+{
+
+  // Declare a variable
+  int year;
+  
+}
+
+==================================================================================================================================================================
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
