@@ -1,0 +1,145 @@
+# PROJECT
+---------
+
+* Piggy Bank
+------------
+	You just returned from a trip to South America. The countries you visited were Colombia, Brazil, and Peru. You arrived back in your country with some foreign currencies from these 
+	three countries.
+
+	Write a C++ program called currency.cpp that prompts the user for the amount of each foreign currency. Your prompts should look like:
+
+		Enter number of Colombian Pesos:
+		Enter number of Brazilian Reais:
+		Enter number of Peruvian Soles:
+
+	Your program should then convert the amount entered by the user and display the total amount of USD. Your final output should look like:
+
+		US Dollars = $______
+
+	If you get stuck during this project or would like to see an experienced developer work through it, click Get Unstuck to see a project walkthrough video.
+
+	Creating variables:
+	-------------------
+	1.
+	First things first, let’s declare three variables:
+
+		. pesos for Pesos
+		. reais for Reais
+		. soles for Soles
+
+	Hint
+	You can do it using three different lines:
+
+		double pesos;
+		double reais;
+		double soles;
+
+	Or you can do it together:
+
+		double pesos, reais, soles;
+
+	2.
+	You’ll need another variable to store the amount you have in dollars.
+
+	Let’s declare a variable called dollars.
+
+
+	Hint
+		double dollars;
+
+	3.
+	Compile and execute the code to make sure it’s bug-free before moving on!
+
+
+	Hint
+	Compile:
+
+		g++ currency.cpp
+
+	Execute:
+
+		./a.out
+	
+	Asking the questions and taking inputs:
+	---------------------------------------
+	4.
+	You’ll want to ask the user the first question:
+
+		Enter number of Colombian Pesos:
+
+	Hint
+	std::cout << "Enter number of Colombian Pesos: ";
+
+	5.
+	You then want the user to type in how much they have and store it in pesos.
+
+
+	Hint
+		std::cin >> pesos;
+
+	6.
+	Do this for the other two currencies.
+
+
+	Hint
+		std::cout << "Enter number of Colombian Pesos: ";
+		std::cin >> pesos;
+ 
+		std::cout << "Enter number of Brazilian Reais: ";
+		std::cin >> reais;
+ 
+		std::cout << "Enter number of Peruvian Soles: ";
+		std::cin >> soles;
+
+	Coverting to USD:
+
+	7.
+	Google the conversion rates:
+
+		from Pesos to USD
+		from Reais to USD
+		from Soles to USD
+
+	And write them down in your code using a comment.
+
+
+	Hint
+	As of Feb. 27th, 2019:
+
+		// Pesos conversion rate: 0.00032
+		// Reais conversion rate: 0.27
+		// Soles conversion rate: 0.3
+
+	8.
+	Write an equation that solves for the total USD.
+
+	This will look something like:
+
+	dollars = (conversion_rate1 * currency1) + (conversion_rate2 * currency2) + (conversion_rate3 * currency3)
+
+	Hint
+	For example:
+
+		dollars = 0.00032 * pesos + 0.27 * reais + 0.3 * soles;
+
+	9.
+	Display the total amount of USD. Your final output should look like:
+
+	US Dollars = $______
+
+	Hint
+		std::cout << "Total USD = $" << dollars << "\n";
+
+	Given 4 pesos, 5 soles, and 6 reais, you should have $3.12128 USD.
+
+	Optional:
+	10.
+
+		Sample solution(s):
+
+	currency.cpp
+	P.S. If you make something cool, share it with us!
+
+
+	Hint
+	Tag @Codecademy on Twitter or make a Pull Request to the Learn C%20%20 GitHub repo for a chance be featured in the course.
